@@ -47,10 +47,63 @@ main img{
 	text-shadow:0 0 4px #000;
 }
 
+/*modaal opmaken*/
+.modaal{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    width:100vw;
+    background-color: rgba(0,0,0,0.7);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.modaal-con{
+    background-color: #fff;
+    max-width: 70vh;
+    padding:2em;
+    max-height: 80vh;
+    overflow:auto;
+    animation: schuifIn .3s cubic-bezier(.17,.67,.8,1.47) forwards;
+}
+
+.sluit-knop{
+    float:right;
+    font-size:1.5em;
+    margin:1em;
+}
+
+.sluit-knop:hover{
+    color:red;
+}
+
 .validatie img {
     height: 1em;
     width: auto;
     border: 0;
     margin: 0 .3em;
     cursor: pointer;
+}
+
+@keyframes schuifIn{
+    0% {margin-top: 90vh; }
+    100% {margin-top :0; }
+}
+@-moz-keyframes schuifIn{
+    0% {margin-top: 90vh; }
+    100% {margin-top :0; }
+}
+@-webkit-keyframes schuifIn{
+    0% {margin-top: 90vh; }
+    100% {margin-top :0; }
+}
+@-o-keyframes schuifIn{
+    0% {margin-top: 90vh; }
+    100% {margin-top :0; }
+}
+@-ms-keyframes schuifIn{
+    0% {margin-top: 90vh; }
+    100% {margin-top :0; }
 }
